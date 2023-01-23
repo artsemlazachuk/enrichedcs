@@ -63,20 +63,19 @@ body {
 }
 .aboutUsGoal {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 0 10%;
-    gap: 60px;
-    max-width: 1400px;
-    justify-self: center;
+    gap: 40px;
 }
 .aboutUsGoal img {
     width: 100%;
     height: 100%;
-    justify-self: center;
+    object-fit: cover;
+    max-width: 1000px;
 }
 .aboutUsStatement {
     align-self: center;
-    justify-self: center;
+    max-width: 1000px;
 }
 
 /* Future Hackathons */
@@ -304,6 +303,7 @@ input:checked ~ .tab-content {
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
+    height: 501%;
     text-align: center;
     background-color: #333;
     color: white;
